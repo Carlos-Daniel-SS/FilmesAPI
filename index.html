@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Universos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="bg bg-secondary">
+    <div class="container-fluid py-3 bg bg-dark text-light text-center">
+        <h1 class="fs-2" id="titulo">Universos Cinematográficos</h1>
+        <p id="descricao">acompanhe suas sagas favoritas.</p>
+    </div>
+    <div class="container">
+        <div id="titulo-lista" class="fs-3 text-light fw-bold">Universos</div>
+    </div>
+    <div id="listagem" class="container d-flex align-items-center justify-content-start flex-wrap">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        const url_api = "http://localhost:3000";
+        const titulo = document.getElementById("titulo");
+        const descricao = document.getElementById("descricao");
+        const listagem = document.getElementById("listagem");
+        const paginas = {
+            home: {
+                titulo: "Universos Cinematográficos",
+                descricao: "acompanhe suas sagas favoritas.",
+                api: "/universos",
+                funcao: (json) => {
+                    let lista = json;
+                    document.getElementById("titulo-lista").innerHTML = "Universos";
+                    listagem.innerHTML = null;
+                    lista.forEach(universo => {
+                        let card = `
+                            <div class="card m-2" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">${universo.nome}</h5>
+                                    <p class="card-text">${universo.resumo}</p>
+                                    <button onclick="PageView('universo', ${universo.id})" class="w-100 btn btn-primary">Vê Filmes</a>
+                                </div>
+                            </div>
+                        `;
+                        listagem.innerHTML += card;
+                    })
+                }
+            },
+            universo: {api:"/universo/", ordem:"l", funcao: (json) => {
+                listagem.innerHTML = null;
+                let universo = json;
+                document.getElementById("titulo-lista").innerHTML = `
+                    <button onclick="PageView('home', null)" class="btn btn-light mx-2">voltar</button>
+                    <button onclick="MudarOrdem('l', ${universo.id})" class="btn ${paginas.universo.ordem == "l" ? 'btn-warning' : 'btn-light'} mx-2">Ordem Lançamento</button>
+                    <button onclick="MudarOrdem('c', ${universo.id})" class="btn ${paginas.universo.ordem == "c" ? 'btn-warning' : 'btn-light'} mx-2">Ordem Cronológica</button>
+                    Filmes em ordem ${paginas.universo.ordem == "l" ? 'de lançamento' : 'Cronológica'}
+                `;
+                titulo.textContent = universo.nome;
+                descricao.textContent = universo.resumo;
+                universo.filmes.forEach(filme => {
+                    let card = `
+                        <div class="card m-2" style="width: 18rem;">
+                            <!--<img src="${filme.capa}" class="card-img-top" alt="...">-->
+                            <div class="card-body">
+                                <h5 class="card-title">${filme.titulo}</h5>
+                                <p class="card-text">${filme.sinopse}</p>
+                            </div>
+                        </div>
+                    `;
+                    listagem.innerHTML += card;
+                })
+            }},
+        };
+
+        function MudarOrdem(ordem, id){
+            paginas.universo.ordem = ordem;
+            PageView("universo", id);
+        }
+
+        function PageView(nome, id) {
+            let pagina = paginas[nome];
+            let url = url_api + pagina.api;
+            if(nome == "universo") url += pagina.ordem;
+            if(id != null) url+= "/"+id;
+            fetch(url).then(data => { return data.json(); }).then(json => { pagina.funcao(json); });
+        }
+        PageView("home", null);
+    </script>
+</body>
+
+</html>

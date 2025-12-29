@@ -1,0 +1,83 @@
+{
+  "universos": [
+    {
+      "id": 0,
+      "nome": "MCU - Marvel Cinematic Universe",
+      "resumo": "Universo cinematográfico interconectado da Marvel Studios.",
+      "filmes": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
+      "ordem_cronologica": [5,3,0,1,2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33],
+      "ordem_lancamento": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33]
+    },
+    {
+      "id": 1,
+      "nome": "DCU - DC Universe (Novo)",
+      "resumo": "Novo universo cinematográfico da DC Studios liderado por James Gunn.",
+      "filmes": [34,35,36,37,38],
+      "ordem_cronologica": [34,35,36,37,38],
+      "ordem_lancamento": [34,35,36,37,38]
+    },
+    {
+      "id": 2,
+      "nome": "Star Wars",
+      "resumo": "Saga espacial épica ambientada em uma galáxia muito distante.",
+      "filmes": [39,40,41,42,43,44,45,46,47,48,49],
+      "ordem_cronologica": [42,43,44,48,39,40,41,49,45,46,47],
+      "ordem_lancamento": [39,40,41,42,43,44,48,49,45,46,47]
+    }
+  ],
+
+  "filmes": [
+    { "id": 0, "titulo": "Homem de Ferro", "sinopse": "Tony Stark constrói uma armadura para escapar do cativeiro e se torna o Homem de Ferro.", "capa": "iron_man.jpg" },
+    { "id": 1, "titulo": "Homem de Ferro 2", "sinopse": "Tony enfrenta inimigos e as consequências de revelar sua identidade.", "capa": "iron_man_2.jpg" },
+    { "id": 2, "titulo": "Thor", "sinopse": "O deus do trovão é banido para a Terra e aprende o verdadeiro significado de heroísmo.", "capa": "thor.jpg" },
+    { "id": 3, "titulo": "Capitão América: O Primeiro Vingador", "sinopse": "Steve Rogers se torna o Capitão América durante a Segunda Guerra Mundial.", "capa": "cap_america_1.jpg" },
+    { "id": 4, "titulo": "Os Vingadores", "sinopse": "Heróis se unem para impedir Loki de dominar a Terra.", "capa": "avengers.jpg" },
+    { "id": 5, "titulo": "Capitã Marvel", "sinopse": "Carol Danvers descobre seu passado e se torna uma das heroínas mais poderosas.", "capa": "captain_marvel.jpg" },
+    { "id": 6, "titulo": "Homem de Ferro 3", "sinopse": "Tony Stark enfrenta traumas e uma nova ameaça terrorista.", "capa": "iron_man_3.jpg" },
+    { "id": 7, "titulo": "Thor: O Mundo Sombrio", "sinopse": "Thor luta para salvar os Nove Reinos de uma antiga força sombria.", "capa": "thor_2.jpg" },
+    { "id": 8, "titulo": "Capitão América: O Soldado Invernal", "sinopse": "Steve descobre uma conspiração dentro da SHIELD.", "capa": "cap_america_2.jpg" },
+    { "id": 9, "titulo": "Guardiões da Galáxia", "sinopse": "Um grupo improvável protege um artefato poderoso.", "capa": "gotg.jpg" },
+    { "id": 10, "titulo": "Guardiões da Galáxia Vol. 2", "sinopse": "Os Guardiões enfrentam segredos do passado de Peter Quill.", "capa": "gotg_2.jpg" },
+    { "id": 11, "titulo": "Vingadores: Era de Ultron", "sinopse": "Uma inteligência artificial ameaça extinguir a humanidade.", "capa": "ultron.jpg" },
+    { "id": 12, "titulo": "Homem-Formiga", "sinopse": "Scott Lang assume o manto do Homem-Formiga.", "capa": "ant_man.jpg" },
+    { "id": 13, "titulo": "Capitão América: Guerra Civil", "sinopse": "Heróis entram em conflito sobre controle governamental.", "capa": "civil_war.jpg" },
+    { "id": 14, "titulo": "Homem-Aranha: De Volta ao Lar", "sinopse": "Peter Parker tenta equilibrar vida escolar e heroísmo.", "capa": "spiderman_homecoming.jpg" },
+    { "id": 15, "titulo": "Doutor Estranho", "sinopse": "Um cirurgião aprende artes místicas para proteger a realidade.", "capa": "doctor_strange.jpg" },
+    { "id": 16, "titulo": "Thor: Ragnarok", "sinopse": "Thor precisa impedir o apocalipse de Asgard.", "capa": "thor_3.jpg" },
+    { "id": 17, "titulo": "Pantera Negra", "sinopse": "T'Challa assume o trono de Wakanda.", "capa": "black_panther.jpg" },
+    { "id": 18, "titulo": "Vingadores: Guerra Infinita", "sinopse": "Thanos busca as Joias do Infinito.", "capa": "infinity_war.jpg" },
+    { "id": 19, "titulo": "Homem-Formiga e a Vespa", "sinopse": "Scott se junta à Vespa para uma missão no Reino Quântico.", "capa": "ant_man_2.jpg" },
+    { "id": 20, "titulo": "Vingadores: Ultimato", "sinopse": "Os heróis tentam reverter o estalo de Thanos.", "capa": "endgame.jpg" },
+    { "id": 21, "titulo": "Homem-Aranha: Longe de Casa", "sinopse": "Peter enfrenta novas ameaças após Ultimato.", "capa": "far_from_home.jpg" },
+    { "id": 22, "titulo": "Viúva Negra", "sinopse": "Natasha confronta seu passado como espiã.", "capa": "black_widow.jpg" },
+    { "id": 23, "titulo": "Shang-Chi", "sinopse": "Um mestre das artes marciais enfrenta a organização Dez Anéis.", "capa": "shang_chi.jpg" },
+    { "id": 24, "titulo": "Eternos", "sinopse": "Seres imortais protegem a humanidade há milênios.", "capa": "eternals.jpg" },
+    { "id": 25, "titulo": "Homem-Aranha: Sem Volta Para Casa", "sinopse": "O multiverso entra em colapso após um feitiço dar errado.", "capa": "no_way_home.jpg" },
+    { "id": 26, "titulo": "Doutor Estranho no Multiverso da Loucura", "sinopse": "Realidades alternativas ameaçam o equilíbrio.", "capa": "ds_multiverse.jpg" },
+    { "id": 27, "titulo": "Thor: Amor e Trovão", "sinopse": "Thor enfrenta um assassino de deuses.", "capa": "thor_4.jpg" },
+    { "id": 28, "titulo": "Pantera Negra: Wakanda Para Sempre", "sinopse": "Wakanda lida com a perda de seu rei.", "capa": "wakanda_forever.jpg" },
+    { "id": 29, "titulo": "Homem-Formiga e a Vespa: Quantumania", "sinopse": "A família Lang enfrenta perigos no Reino Quântico.", "capa": "quantumania.jpg" },
+    { "id": 30, "titulo": "Guardiões da Galáxia Vol. 3", "sinopse": "Rocket enfrenta seu passado.", "capa": "gotg_3.jpg" },
+    { "id": 31, "titulo": "As Marvels", "sinopse": "Três heroínas têm seus poderes conectados.", "capa": "the_marvels.jpg" },
+    { "id": 32, "titulo": "Deadpool & Wolverine", "sinopse": "Deadpool entra oficialmente no MCU.", "capa": "deadpool_wolverine.jpg" },
+    { "id": 33, "titulo": "Capitão América: Admirável Mundo Novo", "sinopse": "Sam Wilson assume novos desafios como Capitão América.", "capa": "cap_4.jpg" },
+
+    { "id": 34, "titulo": "Superman", "sinopse": "Clark Kent busca equilibrar humanidade e heroísmo.", "capa": "superman_dcu.jpg" },
+    { "id": 35, "titulo": "The Authority", "sinopse": "Heróis com métodos extremos desafiam o status quo.", "capa": "authority.jpg" },
+    { "id": 36, "titulo": "Batman: The Brave and the Bold", "sinopse": "Batman enfrenta desafios ao lado de Robin.", "capa": "batman_dcu.jpg" },
+    { "id": 37, "titulo": "Supergirl: Woman of Tomorrow", "sinopse": "Kara Zor-El embarca em uma jornada épica.", "capa": "supergirl.jpg" },
+    { "id": 38, "titulo": "Swamp Thing", "sinopse": "Um horror sobrenatural surge do pântano.", "capa": "swamp_thing.jpg" },
+
+    { "id": 39, "titulo": "Uma Nova Esperança", "sinopse": "Luke Skywalker inicia sua jornada Jedi.", "capa": "sw_ep4.jpg" },
+    { "id": 40, "titulo": "O Império Contra-Ataca", "sinopse": "O Império reage e o destino de Luke muda.", "capa": "sw_ep5.jpg" },
+    { "id": 41, "titulo": "O Retorno de Jedi", "sinopse": "A batalha final contra o Império.", "capa": "sw_ep6.jpg" },
+    { "id": 42, "titulo": "A Ameaça Fantasma", "sinopse": "O início da queda da República.", "capa": "sw_ep1.jpg" },
+    { "id": 43, "titulo": "Ataque dos Clones", "sinopse": "A guerra se aproxima e o lado sombrio cresce.", "capa": "sw_ep2.jpg" },
+    { "id": 44, "titulo": "A Vingança dos Sith", "sinopse": "A ascensão de Darth Vader.", "capa": "sw_ep3.jpg" },
+    { "id": 45, "titulo": "O Despertar da Força", "sinopse": "Uma nova geração enfrenta o mal.", "capa": "sw_ep7.jpg" },
+    { "id": 46, "titulo": "Os Últimos Jedi", "sinopse": "A Resistência luta pela sobrevivência.", "capa": "sw_ep8.jpg" },
+    { "id": 47, "titulo": "A Ascensão Skywalker", "sinopse": "O confronto final entre luz e trevas.", "capa": "sw_ep9.jpg" },
+    { "id": 48, "titulo": "Rogue One", "sinopse": "Rebeldes roubam os planos da Estrela da Morte.", "capa": "rogue_one.jpg" },
+    { "id": 49, "titulo": "Han Solo: Uma História Star Wars", "sinopse": "As origens do contrabandista mais famoso da galáxia.", "capa": "solo.jpg" }
+  ]
+}
